@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="Mufasa Play's — Free Fire gameplay, highlights, tips and gaming Shorts.">
+  <title>Mufasa Play's | Gaming Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Mufasa Play's home">
+      <span class="brand-mark">MP<span>✦</span></span>
+      <span class="brand-name">MUFASA <b>PLAY'S</b><small>GAMING HUB</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="#home">Home</a>
+      <a href="#videos">Videos</a>
+      <a href="#shorts">Shorts</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="header-cta" href="#videos">Explore Videos <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR NEXT GAMING DESTINATION</div>
+        <h1>PLAY HARD.<br><span>WIN BIG.</span></h1>
+        <p class="hero-description">Welcome to Mufasa Play's — your zone for Free Fire action, clutch moments, headshots, tips and gaming Shorts.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#videos">▶ &nbsp; Watch Videos</a>
+          <a class="button button-secondary" href="#about">Meet the Channel <span>↘</span></a>
+        </div>
+        <div class="hero-tags"><span>FREE FIRE</span><span>GAMEPLAY</span><span>SHORTS</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative gaming graphic">
+        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <div class="art-glow"></div>
+        <div class="art-badge">MP</div>
+        <div class="art-slash slash-one"></div><div class="art-slash slash-two"></div>
+        <div class="art-caption"><span>MU FASA</span><b>GAMING MODE: ON</b></div>
+        <div class="art-chip chip-top">⚡ LEVEL UP</div>
+        <div class="art-chip chip-bottom">★ NO LIMITS</div>
+      </div>
+      <a class="scroll-hint" href="#videos"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section video-section" id="videos">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE CONTENT ZONE</div><h2>Latest <span>Videos</span></h2></div>
+        <p>Drop in a YouTube link, add your video, and build your own gaming library.</p>
+      </div>
+
+      <form class="add-video-panel" id="addVideoForm">
+        <div class="panel-icon">＋</div>
+        <div class="panel-copy"><h3>Add a YouTube video</h3><p>Paste a video, Shorts, or youtu.be link below.</p></div>
+        <label class="sr-only" for="videoUrl">YouTube video URL</label>
+        <input id="videoUrl" type="url" placeholder="https://www.youtube.com/watch?v=..." required>
+        <label class="sr-only" for="videoTitle">Video title (optional)</label>
+        <input id="videoTitle" type="text" maxlength="90" placeholder="Video title (optional)">
+        <select id="videoCategory" aria-label="Video category">
+          <option value="gameplay">Gameplay</option>
+          <option value="highlights">Highlights</option>
+          <option value="tips">Tips & Tricks</option>
+          <option value="shorts">Shorts</option>
+        </select>
+        <button class="button button-primary add-button" type="submit">Add Video <span>＋</span></button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+
+      <div class="toolbar">
+        <div class="filter-list" role="group" aria-label="Filter videos">
+          <button class="filter active" data-filter="all">All Videos</button>
+          <button class="filter" data-filter="gameplay">Gameplay</button>
+          <button class="filter" data-filter="highlights">Highlights</button>
+          <button class="filter" data-filter="tips">Tips & Tricks</button>
+          <button class="filter" data-filter="shorts">Shorts</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search videos..." aria-label="Search videos"></label>
+      </div>
+      <div class="video-grid" id="videoGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <div>🎮</div><h3>No videos found</h3><p>Add a YouTube link above or try a different search.</p>
+      </div>
+      <p class="storage-note">Your added videos are saved in this browser on this device. They are not uploaded to a public server.</p>
+    </section>
+
+    <section class="shorts-section" id="shorts">
+      <div class="shorts-copy"><div class="eyebrow">QUICK. LOUD. UNSTOPPABLE.</div><h2>Gaming in<br><span>60 seconds.</span></h2><p>Got a great clutch or a clean headshot? Add it as a YouTube Short using the form above and choose the Shorts category.</p><a class="button button-primary" href="#videos">Add a Short <span>↗</span></a></div>
+      <div class="shorts-visual"><div class="phone-frame"><div class="phone-notch"></div><div class="phone-screen"><span class="play-symbol">▶</span><b>YOUR NEXT<br>CLUTCH MOMENT</b><small>MU FASA PLAY'S</small></div></div><div class="shorts-sticker">SHORTS<br><span>↗</span></div></div>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="about-emblem">MP<span>✦</span></div>
+      <div class="about-copy"><div class="eyebrow">WELCOME TO THE SQUAD</div><h2>This is <span>Mufasa Play's.</span></h2><p>A gaming space for Free Fire fans. Find gameplay, clutch highlights, useful tips and quick Shorts — all in one place.</p><div class="about-actions"><a class="button button-primary" id="channelButton" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Visit YouTube Channel ↗</a><p>Replace the channel link in <code>script.js</code> with your own.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">MP<span>✦</span></span><span class="brand-name">MUFASA <b>PLAY'S</b><small>GAMING HUB</small></span></a>
+    <p>Built for gamers. Powered by passion.</p>
+    <a href="#home">Back to top ↑</a>
+    <small class="copyright">© <span id="year"></span> Mufasa Play's. All rights reserved.</small>
+  </footer>
+
+  <div class="player-modal" id="playerModal" hidden role="dialog" aria-modal="true" aria-label="YouTube video player">
+    <button class="modal-backdrop" id="modalBackdrop" aria-label="Close video player"></button>
+    <div class="player-dialog"><button class="modal-close" id="modalClose" aria-label="Close player">✕</button><div class="player-frame"><iframe id="playerFrame" title="YouTube video player" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h3 id="playerTitle">Now playing</h3></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
